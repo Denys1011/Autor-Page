@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+
+:root {
+  --bg-1:  #FEF0EE;
+  --bg-2: #fcd0c7; 
+}
+
+/* Configuracion */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globales */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-bottom: 15px;
+}
+
+img{
+  width: 100%;
+}
+
+/*  Utilidades    */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.bg-1{
+  background-color:  var(--bg-1);
+}
+
+.bg-2{
+  background-color:  var(--bg-2);
+}
+
+.btn {
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  padding: 8px 30px;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.txt-sigmar {
+  font-family: "Sigmar One", sans-serif;
+}
+
+.txt-center {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.p-1{
+  padding: 100px 0;
+}
+@media (min-width: 780px) {
+  .w-40{
+    width: 40%;
+  }
+}
+
+.w-30{
+  width: 40%;
+}
+
+.hidden{
+    display: none;
+}
+@media (min-width: 780px) {
+  .hidden{
+    display: flex;
+  }
+}
+
+/* Header   */
+
+.header {
+  background-image: url(assets/images/showcase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-items li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.header-content{
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section Cards   */
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .cards{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.card{
+  max-width: 250px;
+  
+}
+
+.card-content{
+  margin-top: 12px;
+}
+
+.section-autor{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+@media (min-width: 780px) {
+  .section-autor{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.author-content
+h3,
+h2,
+p{
+  margin-bottom: 6px;
+}
+
+.img-libro{
+  max-width: 400px;
+}
+
+.section-book{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50PX;
+}
+
+@media (min-width: 780px) {
+  .section-book{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  
+}
